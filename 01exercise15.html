@@ -1,0 +1,26 @@
+<html>
+<head>
+  <title>Hide Timer</title>
+    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+  <!-- original code
+    <script>
+    function hide(elementId) {
+      document.getElementById(elementId).style.display = 'none';
+    }
+
+    window.onload = function() {
+      setTimeout("hide('id1')", 3000);
+    }
+  </script>
+-->
+<script>
+  $(document).ready(function() {
+    $("#id1").hide(3000);
+  });
+</script>
+</head>
+    <body>
+      <div id="id1">I'm about to disappear!</div>
+    </body>
+</html>
